@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Untitled Document</title>
+		<link rel="stylesheet" type="text/css" href="css/css.css"/>
+		<script type="text/javascript">
+		
+
+				function myClick(idStr, fun){
+					var btn = document.getElementById(idStr);
+					btn.onclick = fun;
+				}
+				window.onload = function(){
+					var count = 1
+				var imgs = ["1.jpg", "2.jpg", "3.jpg"];
+				myClick("up", function(){
+					var im = document.getElementById("img");
+					count++;
+					if (count>3) count=3; 
+					im.src = 'img/'+count+'.jpg';
+					
+					
+				});
+				
+				
+				myClick("down", function(){
+					var im = document.getElementById("img");
+					count--;
+					if(count<1) count=1;
+					im.src = 'img/'+count+'.jpg';
+				});
+				
+				
+				
+				
+				
+				
+				//为id为btn01的按钮绑定一个单击响应函数
+			myClick("btn01", function(){
+				var bj = document.getElementById("bj");
+				
+				alert(bj.innerHTML);
+			});
+				
+				//为id为btn02的按钮绑定一个单击响应函数
+			myClick("btn02",function(){
+				var all_li = document.getElementsByTagName("li");
+				for(var i=0;i<all_li.length;i++){
+					alert(all_li[i].innerHTML);
+				}
+			});
+				
+				
+				//为id为btn03的按钮绑定一个单击响应函数
+			myClick("btn03", function(){
+				var gender = document.getElementsByName("gender");
+				for(var i=0;i<gender.length;i++){
+					alert(gender[i].value);
+				}
+			});
+				
+				//为id为btn04的按钮绑定一个单击响应函数
+				myClick("btn04",function(){
+					var city = document.getElementById("city");
+					var lis = city.getElementsByTagName("li");
+					for(var i=0;i<lis.length;i++){
+						alert(lis[i].innerHTML);
+					}
+				});
+			
+				//为id为btn05的按钮绑定一个单击响应函数
+			    myClick("btn04",function(){
+			    	var city = document.getElementById("city");
+			    	var lis = city.getElementsByTagName("li");
+			    	for(var i=0;i<lis.length;i++){
+			    		alert(lis[i].innerHTML);
+			    	}
+			    });
+				//为id为btn06的按钮绑定一个单击响应函数
+				
+				//为id为btn07的按钮绑定一个单击响应函数
+			
+					
+					//获取id为bj的节点
+				
+					
+					//返回#bj的父节点
+				
+				
+				
+				//为id为btn08的按钮绑定一个单击响应函数
+			
+				
+				//读取#username的value属性值
+			
+				
+				
+				//设置#username的value属性值
+			
+				
+				//返回#bj的文本值
+			
+		}
+		</script>
+	</head>
+	<body>
+		
+		<div id="outer">
+			<img id= 'img' src="img/1.jpg" alt="一"/>
+			<button id="down">下一张</button>
+			<button id="up">上一张</button>
+		</div>
+		
+	
+	</body>
+</html>
