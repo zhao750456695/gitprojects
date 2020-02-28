@@ -23,6 +23,10 @@ ul{
 	margin: 0px;
 	padding: 0px;
 }
+img{
+	width:500px;
+	height:600px;
+}
 
 .inner li{
 	border-style: solid;
